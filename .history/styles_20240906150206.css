@@ -1,0 +1,396 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000; /* Fundo escuro */
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.container > div {
+    flex: 1; /* Cada div ocupa 1/3 do espaço disponível */
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+
+/* PARTE ESQUERDA */
+
+
+
+.left {
+    background-color: #2c2c2c;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+ 
+}
+
+.title {
+    margin: 100px 0 0 0; /* Adiciona margem superior para mover o título para baixo */
+    padding: 0;
+}
+
+.part1 {
+    font-family: 'Baloo Bhai', sans-serif;
+    font-size: 36px;
+    font-weight: 700; /* Aumenta o peso da fonte para deixá-la mais grossa */
+    line-height: 48px;
+    text-align: left;
+    color: #E3E3E3;
+    display: block;
+    margin-bottom: -10px; /* Reduz a distância entre as duas partes do título */
+    margin-left: 35px;
+}
+
+.part2 {
+    font-family: 'Baloo Bhai', sans-serif;
+    font-size: 48px;
+    font-weight: 700; /* Aumenta o peso da fonte para deixá-la mais grossa */
+    line-height: 64px;
+    text-align: left;
+    color: #3CB3D6;
+    display: block;
+    margin-left: 35px;
+}
+
+.vertical-rectangle {
+    width: 390px; /* Largura do retângulo */
+    height: 660px; /* Altura do retângulo */
+    background: #00000075; /* Cor de fundo com opacidade */
+    border-radius: 20px; /* Bordas arredondadas */
+    margin-left: 35px; /* Alinhamento com o título */
+    margin-top: 1px; /* Espaço entre o título e o retângulo */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribui o espaço */
+    align-items: center; /* Centraliza os conteúdos */
+}
+
+
+.rectangle-button {
+    width: 320px; /* Largura do botão */
+    height: 50px; /* Altura do botão */
+    background: linear-gradient(180deg, #3CB3D6 0%, #1F5E70 100%); /* Gradiente de cor */
+    border-radius: 15px; /* Bordas arredondadas */
+    border: none; /* Remove borda padrão do botão */
+    color: white; /* Cor do texto */
+    font-family: 'Baloo Bhai', sans-serif;
+    font-size: 18px; /* Tamanho do texto */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    margin-bottom: -15px; /* Ajusta o espaçamento superior */
+    cursor: pointer;
+}
+
+.back-button {
+    background: none; /* Remove o fundo */
+    border: none; /* Remove a borda */
+    color: #E3E3E3; /* Cor do texto */
+    font-family: 'Baloo Bhai', sans-serif;
+    font-size: 11px; /* Tamanho do texto */
+    margin-bottom: 20px; /* Espaçamento superior ajustado */
+    margin-top: 10px;
+    text-decoration: underline; /* Adiciona sublinhado */
+    cursor: pointer; /* Muda o cursor ao passar por cima */
+}
+
+
+.button-group {
+    display: flex;
+    justify-content: space-between; /* Espaça os botões igualmente */
+    width: 0%; /* Largura igual à do retângulo */
+    padding: 10px 20px; /* Adiciona espaçamento ao redor dos botões */
+}
+
+.top-button {
+    width: 50px; /* Largura dos botões */
+    height: 40px; /* Altura dos botões */
+    background: linear-gradient(180deg, #3CB3D6 0%, #1F5E70 100%); /* Gradiente de cor */
+    border-radius: 15px; /* Bordas arredondadas */
+    border: none; /* Remove borda padrão do botão */
+    color: white; /* Cor do texto */
+    font-family: 'Baloo Bhai', sans-serif;
+    font-size: 16px; /* Tamanho do texto */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    cursor: pointer;
+}
+
+
+
+
+.gradient-rectangle {
+    width: 300px; /* Largura igual ao botão */
+    height: 40px; /* Altura padrão para cada retângulo, ajuste conforme necessário */
+    background: radial-gradient(547.21% 823.76% at 94.51% 88.04%, #1D1C1C 0%, #837E7E 100%);
+    border-radius: 8px; /* Bordas arredondadas, igual ao botão */
+    margin-bottom: 1px; /* Diminui a distância entre os retângulos */
+    margin-top: 38px;
+    margin-left: 0px;
+    position: relative;
+    width: 100px; /* Ajuste conforme o tamanho desejado */
+    height: 100px;
+    display: inline-block;
+    background: linear-gradient(to right, #00f, #0ff);
+}
+
+.rectangle-title {
+    width: 300px; /* Largura igual ao botão e retângulos */
+    height: 30px; /* Altura do título */
+    border-radius: 8px; /* Bordas arredondadas */
+    display: flex;
+    align-items: center; /* Centraliza verticalmente o texto */
+    justify-content: center; /* Centraliza horizontalmente o texto */
+    color: #A4A4A4; /* Cor do texto */
+    font-weight: 700;
+    font-family: 'Baloo Bhai', sans-serif;
+    font-size: 14px; /* Tamanho do texto */
+    margin-bottom: -40px; /* Espaçamento entre o título e o retângulo */
+    margin-top: 10px;
+   
+}
+
+.image-container {
+    width: 51%;
+    display: flex;
+    justify-content: space-between; /* Coloca uma imagem em cada lado */
+    position: absolute; /* As imagens ficam fora do fluxo normal */
+    top: 40px; /* Ajusta a posição acima do retângulo */
+    padding: 0 10px; /* Espaçamento lateral entre as bordas */
+}
+
+.small-image {
+    width: 15px; /* Define o tamanho da imagem */
+    height: 15px;
+}
+
+.left-image {
+    position: relative;
+    left: 10px;
+    top: 445px;
+}
+
+.right-image {
+    position: relative;
+    right: 690px;
+    top: 445px
+}
+
+.small-image1 {
+    width: 40px;
+    height: 40px;
+    left: 210px;
+    position: relative;
+    cursor: grab; /* Mostra o ícone de "mão" ao passar o mouse */
+    -webkit-user-drag: none; /* Evita o comportamento padrão de arrastar a imagem */
+    user-select: none; /* Evita que o texto dentro da imagem seja selecionado */
+}
+.small-image2 {
+    width: 40px;
+    height: 40px;
+    left: 85px;
+    position: relative;
+    cursor: grab; /* Mostra o ícone de "mão" ao passar o mouse */
+    -webkit-user-drag: none; /* Evita o comportamento padrão de arrastar a imagem */
+    user-select: none; /* Evita que o texto dentro da imagem seja selecionado */
+}
+.small-image3 {
+    width: 40px;
+    height: 40px;
+    left: 170px;
+    position: relative;
+    cursor: grab; /* Mostra o ícone de "mão" ao passar o mouse */
+    -webkit-user-drag: none; /* Evita o comportamento padrão de arrastar a imagem */
+    user-select: none; /* Evita que o texto dentro da imagem seja selecionado */
+}
+.small-image4 {
+    width: 40px;
+    height: 40px;
+    left: 50px;
+    position: relative;
+    cursor: grab; /* Mostra o ícone de "mão" ao passar o mouse */
+    -webkit-user-drag: none; /* Evita o comportamento padrão de arrastar a imagem */
+    user-select: none; /* Evita que o texto dentro da imagem seja selecionado */
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between; /* Espaça os botões igualmente */
+    width: 80%; /* Largura do grupo de botões */
+    height: 1%;
+    top: -15px;
+    position: relative;
+}
+
+.top-button {
+    width: 150px; /* Largura dos botões */
+    height: 30px; /* Altura dos botões */
+    background: linear-gradient(180deg, #3CB3D6 0%, #1F5E70 100%); /* Gradiente de cor */
+    border-radius: 8px; /* Bordas arredondadas */
+    border: none; /* Remove borda padrão do botão */
+    color: white; /* Cor do texto */
+    font-family: 'Baloo Bhai', sans-serif;
+    font-size: 11px; /* Tamanho do texto */
+    cursor: pointer;
+}
+
+.rectangles-group {
+    margin-top: 10px; /* Ajusta o espaçamento superior */
+}
+
+.image-rectangle {
+    width: 290px; /* Largura do retângulo */
+    height: 130px; /* Altura do retângulo */
+    background: radial-gradient(547.21% 823.76% at 94.51% 88.04%, #1D1C1C 0%, #837E7E 100%); /* Gradiente de fundo */
+    border-radius: 8px; /* Bordas arredondadas */
+    display: flex;
+    justify-content: space-between; /* Espaça as imagens igualmente */
+    align-items: center; /* Centraliza verticalmente */
+    padding: 0 10px; /* Espaçamento lateral interno */
+    position: relative;
+    top: 0px;
+}
+
+.rectangle-image {
+    width: 110px; /* Largura das imagens */
+    height: 110px; /* Altura das imagens */
+    position: relative;
+    right: 10px;
+    top: 10px;
+    bottom: 0px;
+}
+
+
+
+/* Estilo para o novo título sem fundo */
+.title-container {
+    width: 0%;
+    display: flex;
+    justify-content: center; /* Centraliza o título horizontalmente */
+    margin-bottom: 0; /* Remove o espaço entre o título e o retângulo de imagens */
+}
+
+.parentesco-title {
+    color: #A4A4A4; /* Cor do texto */
+    font-family: 'Baloo Bhai', sans-serif;
+    font-size: 14px; /* Tamanho do texto */
+    font-weight: bold;
+    text-align: center; /* Centraliza o texto dentro do título */
+    position: relative;
+    top: 20px;
+}
+
+/* PARTE CENTRAL */
+
+
+
+.center {
+    background-color: #3d3d3d; /* Cor de fundo para a div central */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Distribui o espaço entre as imagens */
+}
+
+
+.top-image {
+    max-width: 40%;
+    height: auto;
+    margin-top: -60px;
+}
+
+.center-image {
+    max-width: 200%;
+    height: auto;
+    margin-top: auto; /* Centraliza verticalmente */
+    margin-bottom: 200px;
+}
+
+
+/* PARTE DIREITA */
+
+
+
+.right {
+    background-color: #4e4e4e;
+}
+
+.novo-retangulo {
+    width: 350px;
+    height: 650px;
+    background-color: rgba(0, 0, 0, 0.46);
+    border-radius: 15px;
+    margin: 20px auto;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 100px;
+   
+}
+
+.titulo-retangulo {
+    background-color: #3CB3D6;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    padding: 15px;
+    border-radius: 15px 15px 0 0;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    position: relative;
+    bottom: 15px;
+    right: 15px;
+    width: 109%; /* Título ocupará toda a largura do retângulo */
+}
+
+.conteudo-scroll {
+    flex-grow: 1; /* Faz o contêiner de rolagem ocupar o espaço restante */
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.imagens-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px; /* Espaço entre as imagens e o próximo grupo */
+}
+
+.imagem-wrapper {
+    background: radial-gradient(547.21% 823.76% at 94.51% 88.04%, #1D1C1C 0%, #837E7E 100%);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.imagem-wrapper img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+}
+
+.conteudo-scroll::-webkit-scrollbar {
+    width: 10px;
+}
+
+.conteudo-scroll::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #3CB3D6 0%, #1F5E70 100%);
+    border-radius: 10px;
+}
+
+.conteudo-scroll::-webkit-scrollbar-track {
+    background-color: transparent;
+}
